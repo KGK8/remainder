@@ -126,7 +126,7 @@ const App = () => {
   const deleteHandler = (id) => {
     axios.delete(`https://agile-wildwood-85313.herokuapp.com/addremainder/${id}`).then((res) => {
       console.log(res);
-      setDeleteUpdated(id);
+      setDeleteUpdated(10);
     });
   };
   return (
