@@ -35,7 +35,7 @@ const App = () => {
     formData.id = "";
   };
   useEffect(() => {
-    axios.get(`http://127.0.0.1:9000/addremainder`).then((res) => {
+    axios.get(`https://agile-wildwood-85313.herokuapp.com/addremainder`).then((res) => {
       // setDeleteUpdated("0");
       return setGetRemainders(res.data);
     });
@@ -60,7 +60,7 @@ const App = () => {
       ),
     };
     axios
-      .post(`http://127.0.0.1:9000/addremainder`, apiBody)
+      .post(`https://agile-wildwood-85313.herokuapp.com/addremainder`, apiBody)
       .then((res) => {
         console.log(res);
         setDeleteUpdated(res.data.userId);
@@ -107,7 +107,7 @@ const App = () => {
       ),
     };
     axios
-      .put(`http://127.0.0.1:9000/addremainder/${edit._id}`, apiBody)
+      .put(`https://agile-wildwood-85313.herokuapp.com/addremainder/${edit._id}`, apiBody)
       .then((res) => {
         console.log(res);
         setDeleteUpdated(edit._id);
@@ -124,7 +124,7 @@ const App = () => {
       });
   };
   const deleteHandler = (id) => {
-    axios.delete(`http://127.0.0.1:9000/addremainder/${id}`).then((res) => {
+    axios.delete(`https://agile-wildwood-85313.herokuapp.com/addremainder/${id}`).then((res) => {
       console.log(res);
       setDeleteUpdated(id);
     });
