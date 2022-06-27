@@ -7,7 +7,49 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.formContainer {
+  width: 30%;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 5px;
+  margin: 5px;
+}
+
+#timeInput {
+  width: 180px;
+  display: inline-block;
+  padding: 5px;
+  /* margin: 5px; */
+}
+
+.appendData {
+  width: 70%;
+}
+
+.containerRem {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 5px;
+  margin: 5px;
+}
+
+.editPen {
+  border: none;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.d-none {
+  display: none;
+}
+
+.showUp {
+  margin-left: 55%;
+}
+
+.errorMsg {
+  color: red;
+  width: 100%;
+  text-align: center;
 }
